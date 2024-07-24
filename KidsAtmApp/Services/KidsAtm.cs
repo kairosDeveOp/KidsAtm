@@ -3,7 +3,6 @@ using KidsAtmApp.Repository.Entities;
 using KidsAtmApp.Repository.Interfaces;
 using Microsoft.Identity.Client;
 using System.Diagnostics;
-using Microsoft.EntityFrameworkCore;
 using KidsAtmApp.Entities;
 
 namespace KidsAtmApp;
@@ -18,20 +17,12 @@ public class KidsAtm : IUserLogin
   
     public void RunCode()
     {
-      using(var context = new ApplicationDbContext())
-        {
-         
-         var user = new UserAccount{UserAccountId=1,FirstName = "gigi", LastName = "kirk", AccountNumber = 123456, carDigits=433443, CardPin=123123, AccountBalance=20.00, FullLogin=1, IsLocked=false}; 
-         context.UserAccount.Add(user);
-         context.SaveChanges();
-        }
-
+      
       AppScreen.Welcome();
       CheckUserCardDigitsAndPin();
       AppScreen.WelcomeKid(selectedAccount!.FirstName, selectedAccount.LastName);
       AppScreen.MenuOutput();
       
-
     }
 
     public void InitialData()
