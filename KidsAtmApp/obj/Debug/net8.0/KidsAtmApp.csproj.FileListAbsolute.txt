@@ -129,6 +129,7 @@ C:\Users\Teste\KidsAtm\KidsAtmApp\obj\Debug\net8.0\KidsAtmApp.GeneratedMSBuildEd
 C:\Users\Teste\KidsAtm\KidsAtmApp\obj\Debug\net8.0\KidsAtmApp.AssemblyInfoInputs.cache
 C:\Users\Teste\KidsAtm\KidsAtmApp\obj\Debug\net8.0\KidsAtmApp.AssemblyInfo.cs
 C:\Users\Teste\KidsAtm\KidsAtmApp\obj\Debug\net8.0\KidsAtmApp.csproj.CoreCompileInputs.cache
+C:\Users\Teste\KidsAtm\KidsAtmApp\obj\Debug\net8.0\KidsAtmApp.sourcelink.json
 C:\Users\Teste\KidsAtm\KidsAtmApp\obj\Debug\net8.0\KidsAtmApp.csproj.Up2Date
 C:\Users\Teste\KidsAtm\KidsAtmApp\obj\Debug\net8.0\KidsAtmApp.dll
 C:\Users\Teste\KidsAtm\KidsAtmApp\obj\Debug\net8.0\refint\KidsAtmApp.dll

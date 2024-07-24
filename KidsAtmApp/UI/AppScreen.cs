@@ -30,25 +30,51 @@ public static class AppScreen
     internal static UserAccount  UserLoginform()
     {
          UserAccount tempUserAccount = new UserAccount();
-        tempUserAccount.carDigits = InputValidator.Convert<long>("Your Kid's Card Number.");
+         tempUserAccount.carDigits = InputValidator.Convert<long>("Your Kid's Card Number.");
         //assign temporary kids pin number
-        tempUserAccount.CardPin = Convert.ToInt32(AtmUtility.GetPinInput("Enter your PIN Number"));
-        return tempUserAccount;
+         tempUserAccount.CardPin = Convert.ToInt32(AtmUtility.GetPinInput("Enter your PIN Number"));
+         return tempUserAccount;
 
     }
 
-    internal static void Login()
+    internal static void Login()//login progress
     {
         Console.WriteLine("\nValidating Card Number and PIN...");
         AtmUtility.Animation();
 
     }
-    internal static void LockAcreenMessage()
+
+    //print lock scree message from ATM utility method check card number and pin
+    internal static void LockScreenMessage()
     {
         Console.Clear();
-        AtmUtility.MessageOutput("Your Account is Locked. Contact Bank for more Information.", true);
-        AtmUtility.PressEnterToContinue();
+        AtmUtility.MessageOutput("Your Account is Locked. Contact Bank for more Information. Thank you!", true);
+      //  AtmUtility.PressEnterToContinue();
         Environment.Exit(1);//enviroment terminate
+
+        
     }
+    internal static void WelcomeKid(string FirstName, string LastName)//work for login user
+      {
+         Console.WriteLine($"Welcome back, {FirstName}, {LastName}");
+         AtmUtility.PressEnterToContinue();
+      }
+
+     internal static void MenuOutput()
+     {
+        Console.Clear();
+        Console.WriteLine("****************     KIDS ATM APP MENUE   ************************");
+        Console.WriteLine("  |                                                              |");
+        Console.WriteLine("  | 1 - Account Balance                                          |");
+        Console.WriteLine("  | 2 - Cash Deposit                                             |");  
+        Console.WriteLine("  | 3 - Withdrawal                                               |");
+        Console.WriteLine("  | 4 - Transfer                                                 |");
+        Console.WriteLine("  | 5 - Transactions                                             |");
+        Console.WriteLine("  | 6 - Logout                                                   |");  
+        //Console.WriteLine("  | 1 -                                   { $2,00 } |");  
+       
+
+     
+     } 
 
 }

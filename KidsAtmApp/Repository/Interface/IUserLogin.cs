@@ -1,6 +1,7 @@
-namespace KidsAtmApp.Repository.DAO;
+namespace KidsAtmApp.Repository.Interfaces;
 
-public interface IUserLoginDAO
+
+public interface IUserLogin
 {
     //CRUD...Create...Read..Update...Delete happens
     void CheckUserCardDigitsAndPin();

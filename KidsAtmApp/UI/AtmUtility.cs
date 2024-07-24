@@ -4,7 +4,7 @@ namespace KidsAtmApp.UI;
 
 public static class AtmUtility
 {   //will get temp pin input
-     public static string GetPinInput(string prompt)
+     public static string GetPinInput(string prompt) //secrete in asteriscs
      {
         bool isPrompt = true;
         string stars = "";
